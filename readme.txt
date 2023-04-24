@@ -1,6 +1,5 @@
 Nihar Here, 
+This repository is for my learning purposes only and all the codes uploaded here are for my reference and hence they may contain many codes which i have written for study and research purposes.. 
+Thanks for reading this and please suggest some good content if have any... 
+Happy coding!!
 
-This is basic card game created in cpp language in the devC++ compiler..
-I am still learning to code, please help if there are any changes related to memory management,etc in this code
-
-Thankyou
