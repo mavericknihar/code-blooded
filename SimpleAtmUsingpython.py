@@ -1,22 +1,22 @@
 # Account Data for performing operations.
 accounts = {
     1001: {
-        'Name': 'Nihar Panchal',
+        'Name': 'User01',
         'Balance': 10000,
         'pin': '1234'
     },
     1002: {
-        'Name': 'SPRK Technologies',
+        'Name': 'User02',
         'Balance': 200000,
         'pin': '2023'
     },
     1003: {
-        'Name': 'Vivek Sir',
+        'Name': 'User03',
         'Balance': 45000,
         'pin': '1900'
     },
     1004: {
-        'Name': 'Krutika Maam',
+        'Name': 'User04',
         'Balance': 30000,
         'pin': '2000'
     }
