@@ -10,7 +10,7 @@ frame_size_y = 600
 check_errors = pygame.init()
 
 if(check_errors[1] > 0):
-    print("Error" + check_errors[1])
+    print("Error" + check_errors[3])
 else:
     print("Game Sucessfully Initialized")
 
@@ -31,6 +31,7 @@ fps_controller = pygame.time.Clock()
 #individual snake game size
 square_size = 10
 
+#Declaring the parameters of the body
 def init_vars():
     global head_pos, snake_body, food_pos, food_spawn, direction
     direction = "Right"
@@ -50,7 +51,7 @@ def show_score(choice, color , font , size):
      if choice == 1:
           score_rect.midtop = (frame_size_x / 10, 15)
      else:
-        score_rect.midtop = (frame_size_x / 2, frame_size_y / 1.25)
+        score_rect.midtop = (frame_size_x / 2, frame_size_y / 1.50)
 
      game_window.blit(score_surface, score_rect)
 
@@ -64,16 +65,16 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
         elif event.type == pygame.KEYDOWN:
-            if (event.key == pygame.K_UP or event.key == ord("w")
+            if (event.key == pygame.K_UP or event.key == ord("w") or event.key == ("W") # for the moving the snake forward
                 and direction != "DOWN"):
                 direction = "UP"
-            elif (event.key == pygame.K_DOWN or event.key == ord("s")
+            elif (event.key == pygame.K_DOWN or event.key == ord("s") or event.key == ("S") # moving the snake downward
                   and direction != "UP"):
                   direction = "DOWN"
-            elif (event.key == pygame.K_LEFT or event.key == ord("A")
+            elif (event.key == pygame.K_LEFT or event.key == ord("a") or event.key == ("D") #Moving the snake left
                   and direction != "RIGHT"):
                   direction = "LEFT"
-            elif (event.key == pygame.K_RIGHT or event.key == ord("d")
+            elif (event.key == pygame.K_RIGHT or event.key == ord("d") or event.key == ("R") #Moving the snake right
                   and direction != "LEFT"):
                   direction = "RIGHT"
 
